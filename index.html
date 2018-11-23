@@ -25,7 +25,7 @@
         console.log($("#playBtn"));
         var player = videojs('my-video', {
             muted: false,
-            controls: true / false,
+            controls: false,
             height: docHeight,
             width: docWidth,
             loop: false,
@@ -33,12 +33,9 @@
             autoplay: false,
             // 更多配置.....
         });
-
         videoItem.addEventListener("ended", function () {
-            console.log(1);
         })
         playBtn.on("click", function () {
-            console.log(1);
             videoItem.play();
         })
     </script>
