@@ -1,4 +1,7 @@
-.playBtn {
+.video-wrap {
+    position: relative;
+}
+.play-btn {
     z-index: 999;
     position: absolute;
 }
