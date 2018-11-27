@@ -11,8 +11,10 @@
 
 <body>
     <div class="video-wrap">
-        <div id="playBtn" class="play-btn">播放</div>
-        <video id="my-video" class="video-js" controls preload="auto">
+        <div id="playBtn" class="play-btn">
+            <div class="pbtn">START</div>
+        </div>
+        <video id="myVideo" class="video-js" controls preload="auto">
             <source src="./video//marvel.mp4" type="video/mp4">
         </video>
     </div>
@@ -21,9 +23,11 @@
     <script type="text/javascript">
         var docHeight = document.documentElement.clientHeight,
             docWidth = document.documentElement.offsetWidth,
-            videoItem = document.getElementById("my-video"),
-            playBtn = $("#playBtn");
-        var player = videojs('my-video', {
+            videoItem = document.getElementById("myVideo"),
+            playBtn = $("#playBtn"),
+            playBtnItem = $(".pbtn"),
+            videoWrap = $(".video-wrap");
+        var player = videojs('myVideo', {
             muted: false,
             controls: false,
             height: docHeight,
@@ -31,12 +35,19 @@
             loop: false,
             controls: false,
             autoplay: false,
-            // 更多配置.....
         });
         videoItem.addEventListener("ended", function () {
+            videoWrap.remove();
         })
         playBtn.on("click", function () {
-            videoItem.play();
+            if (videoItem.paused) {
+                playBtnItem.addClass("pbtn-active");
+                videoItem.play();
+            } else {
+                playBtnItem.removeClass("pbtn-active");
+                videoItem.pause();
+            }
+
         })
     </script>
 
