@@ -8,7 +8,8 @@ $(document).ready(function () {
         playBtnItem = $(".pbtn"),
         videoContainer = $("#videoContainer"),
         mainWrap = $("#mainWrap"),
-        mainContainer = $("#mainContainer");
+        mainContainer = $("#mainContainer"),
+        header = $("#header");
     mainContainer.hide()
     // 初始化videojs
     var player = videojs('myVideo', {
@@ -35,6 +36,15 @@ $(document).ready(function () {
         }
 
     })
+    window.document.onscroll = function () {
+        let scrollTop = document.documentElement.scrollTop;
+        if (scrollTop > 90) {
+            header.addClass("header-active")
+        } else {
+            header.removeClass("header-active")
+        }
+        console.log(scrollTop);
+    }
     // 测试用, 完成后删除
     setTimeout(() => {
         videoFinish()
