@@ -2,6 +2,11 @@
 
 /* v1.0 | 20080212 */
 
+/* @font-face {
+    font-family: OstrichSansBlack;
+    src: url('../font/OstrichSans-Black.otf');
+} */
+
 html,
 body,
 div,
@@ -71,7 +76,7 @@ td {
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, "OstrichSansBlack", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -121,4 +126,5 @@ table {
 
 a {
     text-decoration: none;
+    color: #000;
 }
