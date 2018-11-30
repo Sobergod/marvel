@@ -6,8 +6,10 @@ $(document).ready(function () {
         videoItem = document.getElementById("myVideo"),// 使用原生方法才能控制视频播放
         playBtn = $("#playBtn"),
         playBtnItem = $(".pbtn"),
-        videoWrap = $(".video-wrap"),
-        mainContainer = $(".main-container");
+        videoContainer = $("#videoContainer"),
+        mainWrap = $("#mainWrap"),
+        mainContainer = $("#mainContainer");
+    mainContainer.hide()
     // 初始化videojs
     var player = videojs('myVideo', {
         muted: false,
@@ -39,8 +41,9 @@ $(document).ready(function () {
     }, 1500);
     // 播放完成执行
     function videoFinish() {
-        videoWrap.remove();
+        videoContainer.remove();
         body.css("overflow", "auto")
-        mainContainer.addClass("bounce");
+        mainWrap.addClass("bounce");
+        mainContainer.show();
     }
 })

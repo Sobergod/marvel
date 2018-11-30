@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="video-wrap">
+    <div id="videoContainer" class="video-container">
         <div id="playBtn" class="play-btn">
             <div class="pbtn">START</div>
         </div>
@@ -19,7 +19,7 @@
             <source src="./video//marvel.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="animated main-container">
+    <div id="mainContainer" class="main-container">
         <header class="header">
             <div class="header-upper">
                 <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="214" viewBox="0 0 214 86">
@@ -52,13 +52,16 @@
                 </ul>
             </nav>
         </header>
-        <main style="height:1800px;">
-            <article>
-                <div class="banner" id="swiperSwrap">
-                </div>
-            </article>
-            <aside></aside>
-        </main>
+        <div id="mainWrap" class="animated">
+            <main class="mian-wrap" style="height:1800px;">
+                <article>
+                    <div class="banner" id="swiperSwrap">
+                        21321
+                    </div>
+                </article>
+                <aside></aside>
+            </main>
+        </div>
         <footer class="footer">
             制作人: ****、****、*****
         </footer>
