@@ -1,0 +1,86 @@
+/* 电影和漫画页面用 */
+
+.banner {
+    height: 400px;
+    background-size: cover;
+}
+
+.banner-title {
+    width: 800px;
+}
+
+.bg-wrap {
+    /* height: 800px; */
+    overflow: unset;
+}
+
+.mc-list-wrap {
+    position: relative;
+    min-height: 400px;
+}
+
+.mc-list {
+    box-sizing: border-box;
+    position: absolute;
+    top: -40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.mc-list-de {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.mc-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 150px;
+    max-height: 378px;
+    min-height: 378px;
+}
+
+.mc-list-de .mc-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 200px;
+    max-height: 378px;
+    min-height: 378px;
+}
+
+.mc-list-item img {
+    width: 100%;
+    -webkit-box-shadow: 0 16px 30px -8px rgba(0, 0, 0, 2.15);
+    box-shadow: 0 16px 30px -8px rgba(0, 0, 0, 2.15);
+    transition: all .2s ease-in-out;
+}
+
+.mc-list-item img:hover {
+    transform: translateY(-10px);
+    transition: all .5s ease-in-out;
+}
+
+.mc-list-item p {
+    padding-left: 5px;
+}
+
+.mc-title {
+    font-weight: 700;
+    color: #000;
+}
+
+.mc-time {
+    align-self: flex-start;
+    font-weight: 700;
+    color: #999;
+}

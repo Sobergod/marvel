@@ -15,14 +15,14 @@
 </head>
 
 <body>
-    <div id="videoContainer" class="video-container">
+    <!-- <div id="videoContainer" class="video-container">
         <div id="playBtn" class="play-btn">
             <div class="pbtn">START</div>
         </div>
         <video id="myVideo" class="video-js" controls preload="auto">
             <source src="./video//marvel.mp4" type="video/mp4">
         </video>
-    </div>
+    </div> -->
     <div id="mainContainer" class="main-container">
         <header class="header" id="header">
             <div class="header-upper">
@@ -39,16 +39,13 @@
                         <a href="javascript:;">explore</a>
                     </li>
                     <li>
+                        <a href="./history/index.html">history</a>
+                    </li>
+                    <li>
                         <a href="javascript:;">team</a>
                     </li>
                     <li>
-                        <a href="javascript:;">history</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">comics</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">movies</a>
+                        <a href="./movies.html">movies</a>
                     </li>
                     <li>
                         <a href="javascript:;">swot</a>
@@ -251,7 +248,23 @@
                     </section>
                     <section class="team">
                         <div class="title">title: website makers</div>
-                        <div class="content"></div>
+                        <div class="content">
+                            <ul class="maker-list">
+                                <li class="maker-list-item wow bounceInRight" data-wow-duration="1s">
+                                    <img src="./images/maker/a1.jpg " alt="">
+                                    <p class="m-name">JokerYan,Sixuan</p>
+                                </li>
+                                <li class="maker-list-item wow bounceInRight" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <img src="./images/maker/a2.jpg" alt="">
+                                    <p class="m-name">ElliotZhang,Luming</p>
+                                </li>
+                                <li class="maker-list-item wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">
+                                    <img src="./images/maker/a5.jpg" alt="">
+                                    <p class="m-name">AnnaLiu,Buqiao</p>
+                                </li>
+
+                            </ul>
+                        </div>
                         <div class="more">
                             <a href="javascript:;">more</a>
                         </div>
@@ -267,6 +280,7 @@
     <script src="./lib/video7.1.0/js/video.min.js"></script>
     <script src="./dist/scripts/chromagallery.pkgd.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/common.js"></script>
     <script src="./lib/wow/wow.js"></script>
 </body>
 
