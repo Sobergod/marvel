@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html>
 
 <head>
@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./lib/animate/animate.css">
     <link rel="stylesheet" href="./iconfont/iconfont.css">
     <link href="./lib/video7.1.0/css/video-js.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/default.css">
+    <link rel="stylesheet" href="./dist/stylesheets/chromagallery.min.css">
 </head>
 
 <body>
@@ -85,11 +88,12 @@
                                         </span>
                                     </span>
                                     <div class="sub-title">comics</div>
-                                    <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
+                                    <ol class="about-detail-list">
+                                        <li>Black Panther</li>
+                                        <li>Ironheart</li>
+                                        <li>Spider-Man</li>
+                                        <li>S.H.I.E.L.D.</li>
+                                    </ol>
                                 </div>
                                 <div class="about-item">
                                     <span class="about-icon-wrap">
@@ -98,11 +102,12 @@
                                         </span>
                                     </span>
                                     <div class="sub-title">movie</div>
-                                    <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
+                                    <ol class="about-detail-list">
+                                        <li>Avengers: Infinity War</li>
+                                        <li>Black Panther</li>
+                                        <li>Iron Man</li>
+                                        <li>Thor</li>
+                                    </ol>
                                 </div>
                                 <div class="about-item">
                                     <span class="about-icon-wrap">
@@ -111,11 +116,12 @@
                                         </span>
                                     </span>
                                     <div class="sub-title">games</div>
-                                    <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
+                                    <ol class="about-detail-list">
+                                        <li>Marvel Powers United VR</li>
+                                        <li>Marvel's Spider-Man</li>
+                                        <li>Marvel Battle Lines</li>
+                                        <li>Marvel Future Fight</li>
+                                    </ol>
                                 </div>
                             </div>
                         </div>
@@ -125,19 +131,119 @@
                     </section>
                     <section class="gallery">
                         <div class="title">title: gallery</div>
-                        <div class="content"></div>
-                        <div class="more">
-                            <a href="javascript:;">more</a>
+                        <div class="content">
+                            <div class="chroma-gallery mygallery">
+                                <img src="images/thumbs/1.jpg" alt="Pic 1" data-largesrc="images/1.jpg">
+                                <img src="images/thumbs/2.jpg" alt="Pic 2" data-largesrc="images/2.jpg">
+                                <img src="images/thumbs/3.jpg" alt="Pic 3" data-largesrc="images/3.jpg">
+                                <img src="images/thumbs/4.jpg" alt="Pic 4" data-largesrc="images/4.jpg">
+                                <img src="images/thumbs/5.jpg" alt="Pic 5" data-largesrc="images/5.jpg">
+                                <img src="images/thumbs/6.jpg" alt="Pic 6" data-largesrc="images/6.jpg">
+                                <img src="images/thumbs/7.jpg" alt="Pic 7" data-largesrc="images/7.jpg">
+                                <img src="images/thumbs/8.jpg" alt="Pic 8" data-largesrc="images/8.jpg">
+                                <img src="images/thumbs/9.jpg" alt="Pic 9" data-largesrc="images/9.jpg">
+                                <img src="images/thumbs/10.jpg" alt="Pic 10" data-largesrc="images/10.jpg">
+                                <img src="images/thumbs/11.jpg" alt="Pic 10" data-largesrc="images/11.jpg">
+                                <img src="images/thumbs/12.jpg" alt="Pic 10" data-largesrc="images/12.jpg">
+                                <img src="images/thumbs/13.jpg" alt="Pic 10" data-largesrc="images/13.jpg">
+                                <img src="images/thumbs/14.jpg" alt="Pic 10" data-largesrc="images/14.jpg">
+                            </div>
                         </div>
+                        <!-- <div class="more">
+                            <a href="javascript:;">more</a>
+                        </div> -->
                     </section>
                     <section class="timeline">
                         <div class="title">title: movie timeline</div>
                         <div class="content">
-                            <div class="timeline-block"></div>
-                            <div class="timeline-block"></div>
-                            <div class="timeline-block"></div>
-                            <div class="timeline-block"></div>
-                            <div class="timeline-block"></div>
+                            <div class="timeline-block">
+                                <div class="timeline__detail wow slideInRight" data-wow-duration="1s" data-wow-offset="10">
+                                    <img src="./images/timeline/1.jpg" alt="">
+                                    <p>2008's Iron Man tells the story of Tony Stark, a billionaire industrialist and
+                                        genius inventor who is kidnapped and forced to build a devastating weapon.
+                                        Instead, using his intelligence and ingenuity, Tony builds a high-tech suit of
+                                        armor and escapes captivity. When he uncovers a nefarious plot with global
+                                        implications, he dons his powerful armor and vows to protect the world as Iron
+                                        Man.</p>
+                                </div>
+                                <div class="timeline__line  wow fadeIn" data-wow-duration="1s" data-wow-offset="10">
+                                    <div class="l-c"></div>
+                                </div>
+                                <div class="timeline__time wow slideInLeft" data-wow-duration="1s" data-wow-offset="10">
+                                    <span>TIME: 2008</span>
+                                </div>
+                            </div>
+                            <div class="timeline-block">
+                                <div class="timeline__detail wow slideInLeft" data-wow-duration="1s" data-wow-offset="10">
+                                    <img src="./images/timeline/2.jpg" alt="">
+                                    <p>In this new beginning, scientist Bruce Banner desperately hunts for a cure to
+                                        the gamma radiation that poisoned his cells and unleashes the unbridled force
+                                        of rage within him: The Hulk.
+                                        Living in the shadows--cut off from a life he knew and the woman he loves,
+                                        Betty Ross--Banner struggles to avoid the obsessive pursuit of his nemesis,
+                                        General Thunderbolt Ross and the military machinery that seeks to capture him
+                                        and brutally exploit his power.
+                                        As all three grapple with the secrets that led to the Hulk's creation, they are
+                                        confronted with a monstrous new adversary known as the Abomination, whose
+                                        destructive strength exceeds even the Hulk's own.
+                                    </p>
+                                </div>
+                                <div class="timeline__line  wow fadeIn" data-wow-duration="1s" data-wow-offset="10">
+                                    <div class="l-c"></div>
+                                </div>
+                                <div class="timeline__time wow slideInRight" data-wow-duration="1s" data-wow-offset="10">
+                                    <span>TIME: 2008</span>
+                                </div>
+                            </div>
+                            <div class="timeline-block">
+                                <div class="timeline__detail  wow slideInRight" data-wow-duration="1s" data-wow-offset="10">
+                                    <img src="./images/timeline/3.jpg" alt="">
+                                    <p>As the son of Odin, king of the Norse gods, Thor will soon inherit the throne of
+                                        Asgard from his aging father. However, on the day that he is to be crowned,
+                                        Thor reacts with brutality when the gods' enemies, the Frost Giants, enter the
+                                        palace in violation of their treaty. As punishment, Odin banishes Thor to
+                                        Earth. While Loki, Thor's brother, plots mischief in Asgard, Thor, now stripped
+                                        of his powers, faces his greatest threat.
+                                    </p>
+                                </div>
+                                <div class="timeline__line  wow fadeIn" data-wow-duration="1s" data-wow-offset="10">
+                                    <div class="l-c"></div>
+                                </div>
+                                <div class="timeline__time wow slideInLeft" data-wow-duration="1s" data-wow-offset="10">
+                                    <span>TIME: 2011</span>
+                                </div>
+                            </div>
+                            <div class="timeline-block">
+                                <div class="timeline__detail wow slideInLeft" data-wow-duration="1s" data-wow-offset="10">
+                                    <img src="./images/timeline/4.jpg" alt="">
+                                    <p>Marvel's "Captain America: The First Avenger" focuses on the early days of the
+                                        Marvel Universe when Steve Rogers volunteers to participate in an experimental
+                                        program that turns him into the Super Soldier known as Captain America.
+                                    </p>
+                                </div>
+                                <div class="timeline__line  wow fadeIn" data-wow-duration="1s" data-wow-offset="10">
+                                    <div class="l-c"></div>
+                                </div>
+                                <div class="timeline__time wow slideInRight" data-wow-duration="1s" data-wow-offset="10">
+                                    <span>TIME: 2011</span>
+                                </div>
+                            </div>
+                            <div class="timeline-block">
+                                <div class="timeline__detail wow slideInRight" data-wow-duration="1s" data-wow-offset="10">
+                                    <img src="./images/timeline/5.jpg" alt="">
+                                    <p>Marvel Studios presents in association with Paramount Pictures "Marvel's The
+                                        Avengers"--the super hero team up of a lifetime, featuring iconic Marvel super
+                                        heroes Iron Man, the Incredible Hulk, Thor, Captain America, Hawkeye and Black
+                                        Widow.
+                                    </p>
+                                </div>
+                                <div class="timeline__line  wow fadeIn" data-wow-duration="1s" data-wow-offset="10">
+                                    <div class="l-c"></div>
+                                </div>
+                                <div class="timeline__time wow slideInLeft" data-wow-duration="1s" data-wow-offset="10">
+                                    <span>TIME: 2012</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="more">
                             <a href="javascript:;">more</a>
@@ -154,12 +260,14 @@
             </div>
         </div>
         <footer class="footer">
-            制作人: ****、****、*****
+            makers: JokerYan,Sixuan、ElliotZhang,Luming、AnnaLiu,Buqiao
         </footer>
     </div>
-    <script src="./lib/video7.1.0/js/video.min.js"></script>
     <script src="./js/jq3.1.0.js"></script>
+    <script src="./lib/video7.1.0/js/video.min.js"></script>
+    <script src="./dist/scripts/chromagallery.pkgd.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./lib/wow/wow.js"></script>
 </body>
 
 </html>

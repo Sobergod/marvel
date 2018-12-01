@@ -9,7 +9,8 @@ $(document).ready(function () {
         videoContainer = $("#videoContainer"),
         mainWrap = $("#mainWrap"),
         mainContainer = $("#mainContainer"),
-        header = $("#header");
+        header = $("#header")
+    aboutIconWrap = $(".about-icon-wrap");
     mainContainer.hide()
     // 初始化videojs
     var player = videojs('myVideo', {
@@ -44,17 +45,27 @@ $(document).ready(function () {
         } else {
             header.removeClass("header-active")
         }
-        console.log(scrollTop);
     }
+
     // 测试用, 完成后删除
     setTimeout(() => {
         videoFinish()
-    }, 1500);
+    }, 500);
     // 播放完成执行
     function videoFinish() {
         videoContainer.remove();
         body.css("overflow", "auto")
         mainWrap.addClass("bounce");
         mainContainer.show();
+        $(".mygallery").chromaGallery
+            ({
+                color: '#000',
+                gridMargin: 15,
+                maxColumns: 5,
+                dof: true,
+                screenOpacity: 0.8
+            });
+        new WOW().init();
     }
+
 })
