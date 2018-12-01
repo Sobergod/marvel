@@ -435,3 +435,37 @@ body {
 .re-list-item {
     margin: 10px;
 }
+.swot-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,.2);
+}
+.swot-item {
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.si {
+    flex: 1;
+}
+.si h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.si li {
+    font-size: 17px;
+    margin: 10px 0;
+}
+.swot-item .si:first-child {
+    border-right: 2px solid #FFD500;
+}
+.swiper-slide p {
+    padding: 20px;
+}
+.t1 {
+    font-size: 40px;
+    margin: 20px;
+}
