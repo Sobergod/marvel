@@ -31,10 +31,10 @@ $(document).ready(function () {
         }
 
     })
-    // 测试用, 完成后删除
-    setTimeout(() => {
-        videoFinish()
-    }, 500);
+    // // 测试用, 完成后删除
+    // setTimeout(() => {
+    //     videoFinish()
+    // }, 500);
     // 播放完成执行
     function videoFinish() {
         body.css("overflow", "auto")
