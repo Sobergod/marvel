@@ -1,137 +1,156 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh">
 
 <head>
-    <meta charset="utf-8">
-    <title>marvel</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./lib/animate/animate.css">
-    <link rel="stylesheet" href="./iconfont/iconfont.css">
-    <link href="./lib/video7.1.0/css/video-js.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="./css/default.css">
-    <link rel="stylesheet" href="./dist/stylesheets/chromagallery.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ourgroup</title>
+    <link rel="stylesheet" type="text/css" href="./ourgroup/css/base.css" />
+    <script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+    <style>
+        .triangle {
+            position: relative;
+            height: 350px;
+            width: 450px;
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .triangle:hover {
+            background: rgba(0, 0, 0, 0)
+        }
+
+        .person {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 1px 1px 15px #444;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .person img {
+            width: 100%;
+        }
+
+        .person1 {
+            top: 0;
+            left: 34%;
+        }
+
+        .person2 {
+            top: 40%;
+            left: 0;
+            margin: 0 auto;
+        }
+
+        .person3 {
+            top: 40%;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .slide__link {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .slide__link:hover {
+            background: rgba(0, 0, 0, 0);
+        }
+    </style>
 </head>
 
-<body>
-    <div id="mainContainer" class="main-container">
-        <header class="header" id="header">
-            <div class="header-upper">
-                <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="214" viewBox="0 0 214 86">
-                    <g fill="none" fill-rule="evenodd">
-                        <path fill="#EC1D24" d="M0 86h214V0H0z"></path>
-                        <path fill="#FEFEFE" d="M207 66.005v12.938h-23.96V7h12.902v59.005H207zM104.622 42.279c-.999.48-2.042.72-3.059.723V19.864l.065-.002c1.017-.007 8.614.303 8.614 11.444 0 5.824-2.586 9.498-5.62 10.973zM66.809 56.482l3.573-30.762 3.706 30.762h-7.28zM180.79 20.13V7.011h-36.533l-6.014 43.82-5.94-43.82h-13.176l1.475 11.698c-1.52-2.997-6.912-11.698-18.785-11.698-.078-.005-13.191 0-13.191 0l-.05 63.87-9.603-63.87-17.254-.007-9.936 66.174.002-66.167H35.273L29.32 44.184 23.52 7.01H7v71.944h13.01V44.278l5.92 34.677h6.914l5.835-34.677v34.677h25.08l1.518-11.065h10.096l1.517 11.065 24.623.014h.018v-.014h.032V55.603l3.018-.44 6.247 23.806h12.737l-.004-.014H123.597l-8.2-27.898c4.153-3.075 8.846-10.872 7.598-18.331v-.004c.014.095 7.738 46.278 7.738 46.278l15.147-.045 10.353-65.208v65.208h24.557v-12.94h-11.657V49.52h11.657V36.382h-11.657V20.13h11.657z"></path>
-                    </g>
-                </svg>
-            </div>
-            <nav>
-                <ul class="nav">
-                    <li>
-                        <a href="./index.html">explore</a>
-                    </li>
-                    <li>
-                        <a href="./ourgroup.html">ourgroup</a>
-                    </li>
-                    <li>
-                        <a href="./history/index.html">history</a>
-                    </li>
-                    <li>
-                        <a href="./movies.html">movies</a>
-                    </li>
-                    <li>
-                        <a href="./swot.html">swot</a>
-                    </li>
-                    <li>
-                        <a href="./more.html">more</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div id="mainWrap" class="animated">
-            <div class="banner" id="swiperSwrap" style="height:400px;background-image:url('./images/bg@2x.jpg');background-size: cover;">
-                <div class="overlay"></div>
-                <div class="banner-title">
-                    <span>More</span>
-                    <span>
-                        More information about us
-                    </span>
+<body class="demo-5 loading">
+    <svg class="hidden">
+        <symbol id="icon-arrow" viewBox="0 0 24 24">
+            <title>arrow</title>
+            <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+        </symbol>
+        <symbol id="icon-drop" viewBox="0 0 24 24">
+            <title>drop</title>
+            <path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
+            <path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
+        </symbol>
+        <symbol id="icon-github" viewBox="0 0 32.6 31.8">
+            <title>github</title>
+            <path d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z" />
+        </symbol>
+    </svg>
+    <main>
+        <div class="content content--fixed">
+            <header class="codrops-header">
+                <div class="codrops-links">
+                    <a class="codrops-icon codrops-icon--prev" href="./index.html" title="返回"><svg class="icon icon--arrow">
+                            <use xlink:href="#icon-arrow"></use>
+                        </svg></a>
+                </div>
+                <h1 class="codrops-header__title">back home</h1>
+            </header>
+        </div>
+        <div class="slideshow">
+            <div class="slides">
+                <div class="slide slide--current">
+                    <div class="slide__img" style="background-image: url(./ourgroup/img/21.jpg)"></div>
+                    <h2 class="slide__title">Group</h2>
+                    <p class="slide__desc">This is our team members.</p>
+                    <div class="slide__link triangle">
+                        <div class="person person1">
+                            <img src="./images/a1.jpg" alt="">
+                        </div>
+                        <div class="person person2">
+                            <img src="./images/a2.jpg" alt="">
+                        </div>
+                        <div class="person person3">
+                            <img src="./images/a5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img" style="background-image: url(./ourgroup/img/22.jpg)"></div>
+                    <h2 class="slide__title">Power</h2>
+                    <p class="slide__desc">ElliotZhang,Luming is an excellent leader He worked out a plan for the
+                        implementation of the whole project.
+                    </p>
+                    <p class="slide__desc">JokerYan,Sixuan is a good listener and practitioner.He implements the
+                        website through code.</p>
+                    <p class="slide__desc">AnnaLiu,Buqiao is a very careful person.She looked up and revised many
+                        details.</p>
+                    <a class="slide__link" href="#"></a>
+                </div>
+                <div class="slide">
+                    <div class="slide__img" style="background-image: url(./ourgroup/img/23.jpg)"></div>
+                    <h2 class="slide__title">Conflict</h2>
+                    <p class="slide__desc">We also had a lot of disagreements when we started the whole project.</p>
+                    <p class="slide__desc">JokerYan,Sixuan thinks more text should be prepared on the site, while
+                        AnnaLiu,Buqiao thinks more
+                        pictures should be available on the site. They have been arguing about this for a long</p>
+                    <p class="slide__desc">In the end, I made a compromise between the two of them. I chose two of
+                        their most satisfying works and put them on this website.
+                    </p>
+                    <a class="slide__link" href="#"></a>
+                </div>
+                <div class="slide">
+                    <div class="slide__img" style="background-image: url(./ourgroup/img/24.jpg);"></div>
+                    <h2 class="slide__title">Trust</h2>
+                    <p class="slide__desc">By making this project, we learn more about each other's strengths. </p>
+                    <p class="slide__desc">We have also become more united.</p>
+                    <p class="slide__desc">We realized that only by trusting each other's abilities can the project
+                        become a whole.</p>
+                    <a class="slide__link" href="#"></a>
                 </div>
             </div>
-            <div class="bg-wrap">
-                <main class="mian-wrap">
-                    <section class="team">
-                        <div class="title">title: website makers</div>
-                        <div class="content">
-                            <ul class="maker-list">
-                                <li class="maker-list-item wow bounceInRight" data-wow-duration="1s">
-                                    <img src="./images/maker/a1.jpg " alt="">
-                                    <p class="m-name">JokerYan,Sixuan</p>
-                                </li>
-                                <li class="maker-list-item wow bounceInRight" data-wow-duration="1s" data-wow-delay=".5s">
-                                    <img src="./images/maker/a2.jpg" alt="">
-                                    <p class="m-name">ElliotZhang,Luming</p>
-                                </li>
-                                <li class="maker-list-item wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">
-                                    <img src="./images/maker/a5.jpg" alt="">
-                                    <p class="m-name">AnnaLiu,Buqiao</p>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="team">
-                        <div class="title">title: REFERENCE</div>
-                        <div class="content">
-                            <ul class="re-list">
-                                <li class="re-list-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0s">
-                                    Businessballs. (2018). Leadership section-Leadership styles.
-                                    Retrieved from: https://www.businessballs.com/leadership-styles/
-                                </li>
-                                <li class="re-list-item wow bounceInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                                    Sarah, C. (August 15, 2018). The greatest female Marvel Super
-                                    heroes. Captain Marvel, Black widow, Gamora, and more. Retrieved
-                                    from:https://www.marvel.com/articles/comics/the-greatest-female-marvel
-                                    -super-heroes
-                                </li>
-                                <li class="re-list-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
-                                    Bill, G. (August 11, 2004). Authentic Leadership: Rediscovering the
-                                    Secrets to Creating Lasting Value. Amazon. Retrieved from:
-                                    https://www.amazon.com/Authentic-Leadership-Rediscovering-Secrets-C
-                                    reating/dp/0787975281
-                                </li>
-                                <li class="re-list-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="1.5s">
-                                    Lappe, F. (October 12, 2015). Why your brand need to have an
-                                    opinion. Contently. Retrieved from:
-                                    https://contently.com/2015/10/12/why-your-brand-needs-to-have-an-opini
-                                    on/
-                                </li>
-                                <li class="re-list-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="2s">
-                                    Yukl, G. A. (1989). Leadership in organizations. (2nd edition).
-                                    Englewood Cliffs, NJ: Prentice-Hall
-                                </li>
-                                <li class="re-list-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="2.5s">
-                                    Luman Boundless management, Introduce to management,
-                                    Management levels and types. Retrieved from:
-                                    https://courses.lumenlearning.com/boundless-management/chapter/manag
-                                    ement-levels-and-types/
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                </main>
-            </div>
+            <nav class="slidenav">
+                <button class="slidenav__item slidenav__item--prev">Previous</button>
+                <span>/</span>
+                <button class="slidenav__item slidenav__item--next">Next</button>
+            </nav>
         </div>
-        <footer class="footer">
-            makers: JokerYan,Sixuan、ElliotZhang,Luming、AnnaLiu,Buqiao
-        </footer>
-    </div>
-    <script src="./js/jq3.1.0.js"></script>
-    <script src="./lib/video7.1.0/js/video.min.js"></script>
-    <script src="./dist/scripts/chromagallery.pkgd.min.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/common.js"></script>
-    <script src="./lib/wow/wow.js"></script>
+    </main>
+    <script src="./ourgroup/js/demo.js"></script>
+    <script src="./ourgroup/js/imagesloaded.pkgd.min.js"></script>
+    <script src="./ourgroup/js/anime.min.js"></script>
+    <script src="./ourgroup/js/demo5.js"></script>
 </body>
 
 </html>
